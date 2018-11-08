@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.tysw02.myapplication.SquareLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/recycler_view_item_padding">
+
+    <RelativeLayout
+        android:id="@+id/recyclerview_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/recycleview_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/recyclerview_main_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="@dimen/recycler_view_item_text_size"
+            android:textColor="@color/recycler_view_text_color"/>
+        <TextView
+            android:id="@+id/recyclerview_bottom_text"
+            android:layout_below="@+id/recyclerview_main_item_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="12dp"
+            android:textColor="@color/recycler_view_text_color"/>
+            <TextView
+                android:id="@+id/recyclerview_right_text"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/recyclerview_main_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textSize="16dp"
+                android:textColor="@color/recycler_view_text_color"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.example.tysw02.myapplication.SquareLayout>
